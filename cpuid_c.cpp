@@ -12,8 +12,15 @@
  Returns struct with cpuid information
  */
 
+#ifdef _WIN32
+#define WINDOWS
+#endif
 
-#ifdef _WIN32 | _WIN64
+#ifdef _WIN64
+#define WINDOWS
+#endif
+
+#ifdef WINDOWS
 #include <intrin.h>
 struct cpuid_result get_cpuid(uint32_t eax, uint32_t ecx) {
 	int cpuInfo[4];
@@ -29,7 +36,15 @@ struct cpuid_result get_cpuid(uint32_t eax, uint32_t ecx) {
 }
 #endif
 
-#ifdef __APPLE__ | __LINUX__
+#ifdef __linux__
+#define LINUX_OR_MAC
+#endif
+
+#ifndef __APPLE__
+#define LINUX_OR_MAC
+#endif
+
+#ifdef LINUX_OR_MAC
 #include <cpuid.h>
 struct cpuid_result get_cpuid(uint32_t eaxIn, uint32_t ecxIn){
         cpuid_result ret;
