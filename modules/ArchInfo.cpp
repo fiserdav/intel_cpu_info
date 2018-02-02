@@ -49,7 +49,7 @@ void ArchInfo::printInformation(){
         Bit 06: Branch mispredict retired event not available if 1.
          */
 
-        cout << "Core cycle event available:" << YES_NO_I((this->cpu_result.ebx & BIT_X(0)));
+        cout << "Core cycle event available: " << YES_NO_I((this->cpu_result.ebx & BIT_X(0)));
 
         cout << "Instruction retired event available: " << YES_NO_I((this->cpu_result.ebx & BIT_X(1)));
         cout << "Reference cycles event available: " << YES_NO_I((this->cpu_result.ebx & BIT_X(2)));
