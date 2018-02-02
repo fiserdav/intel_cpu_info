@@ -40,7 +40,7 @@ struct cpuid_result get_cpuid(uint32_t eax, uint32_t ecx) {
 #define LINUX_OR_MAC
 #endif
 
-#ifndef __APPLE__
+#ifndef _APPLE_
 #define LINUX_OR_MAC
 #endif
 
