@@ -29,7 +29,7 @@ void initPars() {
 }
 
 int main(int argc, char** argv) {
-	initPars();
+    initPars();
     if(argc < 2) {
         std::cout << "invalid parameters, usage: " << std::endl;
 		std::map<std::string,fPtr>::iterator it;
@@ -43,11 +43,10 @@ int main(int argc, char** argv) {
 		std::map<std::string, fPtr>::iterator it = pars.find(argv[i]);
 		
 		if( it != pars.end()) {
+			printDashes(80);
 			it->second->printInformation();
 		}
     }
     
     return (EXIT_SUCCESS);
 }
-
-
