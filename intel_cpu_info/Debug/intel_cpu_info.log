@@ -1,0 +1,26 @@
+﻿Build started 2/2/2018 4:19:19 PM.
+     1>Project "B:\samples\intel_cpu_info-master\intel_cpu_info-master\intel_cpu_info\intel_cpu_info.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W1 /WX- /Od /Oy- /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\cpuid_c.cpp ..\main.cpp ..\modules\ArchInfo.cpp ..\modules\CpuInfo.cpp ..\modules\PDInfo.cpp ..\modules\TsxCheck.cpp
+         TsxCheck.cpp
+         PDInfo.cpp
+         CpuInfo.cpp
+         ArchInfo.cpp
+         main.cpp
+         cpuid_c.cpp
+     1>b:\samples\intel_cpu_info-master\intel_cpu_info-master\cpuid_c.cpp(16): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>b:\samples\intel_cpu_info-master\intel_cpu_info-master\cpuid_c.cpp(32): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"B:\samples\intel_cpu_info-master\intel_cpu_info-master\intel_cpu_info\Debug\intel_cpu_info.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"B:\samples\intel_cpu_info-master\intel_cpu_info-master\intel_cpu_info\Debug\intel_cpu_info.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"B:\samples\intel_cpu_info-master\intel_cpu_info-master\intel_cpu_info\Debug\intel_cpu_info.lib" /MACHINE:X86 Debug\cpuid_c.obj
+         Debug\main.obj
+         Debug\ArchInfo.obj
+         Debug\CpuInfo.obj
+         Debug\PDInfo.obj
+         Debug\TsxCheck.obj
+         intel_cpu_info.vcxproj -> B:\samples\intel_cpu_info-master\intel_cpu_info-master\intel_cpu_info\Debug\intel_cpu_info.exe
+     1>Done Building Project "B:\samples\intel_cpu_info-master\intel_cpu_info-master\intel_cpu_info\intel_cpu_info.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.57
