@@ -17,7 +17,7 @@
 
 #define printDashes(n) {for(int i =0; i<n;i++) {std::cout << "-";} std::cout << std::endl;}
 
-typedef std::shared_ptr<CpuInfo> fPtr;
+typedef std::unique_ptr<CpuInfo> fPtr;
 
 // parameters
 std::map<std::string, fPtr> pars;
