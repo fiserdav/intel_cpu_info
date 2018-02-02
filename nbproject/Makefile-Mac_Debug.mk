@@ -67,15 +67,20 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cppapplication_1: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cppapplication_1 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/cpuid_c.o: cpuid_c.c
+${OBJECTDIR}/cpuid_c.o: cpuid_c.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/cpuid_c.o cpuid_c.c
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/cpuid_c.o cpuid_c.cpp
 
-${OBJECTDIR}/main.o: main.c
+${OBJECTDIR}/cpuid_c.h.gch: cpuid_c.h
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o "$@" cpuid_c.h
+
+${OBJECTDIR}/main.o: main.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 ${OBJECTDIR}/modules/ArchInfo.o: modules/ArchInfo.cpp
 	${MKDIR} -p ${OBJECTDIR}/modules

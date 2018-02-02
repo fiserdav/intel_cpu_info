@@ -26,6 +26,8 @@
       <runprofile version="9">
         <runcommandpicklist>
           <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -arch</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" -pd</runcommandpicklistitem>
           <runcommandpicklistitem>"${OUTPUT_PATH}" -tsx -pd -arch</runcommandpicklistitem>
         </runcommandpicklist>
         <runcommand>"${OUTPUT_PATH}" -tsx -pd -arch</runcommand>

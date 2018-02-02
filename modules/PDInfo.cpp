@@ -9,6 +9,28 @@
 
 #include "PDInfo.h"
 #include <iostream>
+#include <bitset>
+
+const char* leaf_ebx_14h[32] = {
+			"0 CR3 Filtering Support",
+			"1 Configurable PSB_and CycleAccurate Mode Supported",
+			"2 IP Filtering and TraceStop supported, and Preserve Intel PT MSRs across warm reset",
+			"3 MTC Supported",
+			"4 PTWRITE Supported",
+			"5 Power Event Trace Supported",
+			"rv","rv","rv","rv","rv","rv","rv","rv","rv","rv","rv","rv","rv", //reserved
+			"rv","rv","rv","rv","rv","rv","rv","rv","rv","rv","rv","rv","rv"
+		};
+
+const char* leaf_ecx_14h[32] = {
+        "0 ToPA Output Supported",
+        "1 ToPA Tables Allow Multiple Output Entries",
+        "2 Single-Range Output Supported",
+        "3 Output to Trace Transport Subsystem Supported",
+        "rv","rv","rv","rv","rv","rv","rv","rv","rv","rv","rv","rv","rv","rv", //reserved
+        "rv","rv","rv","rv","rv","rv","rv","rv","rv","rv","rv","rv","rv"
+        "31 IP Payloads are LIP"
+};
 
 PDInfo::PDInfo() {
     this->cpu_result = cpuid(0x7, 0);

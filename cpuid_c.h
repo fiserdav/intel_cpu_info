@@ -9,12 +9,10 @@
 #ifndef CPUID_H
 #define CPUID_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 #include <stdio.h>
 #include <stdlib.h>
-#include <cpuid.h>
+#include <cstdint>
+#include "string.h"
     
 struct cpuid_result {
     uint8_t valid;
@@ -23,9 +21,6 @@ struct cpuid_result {
 
 struct cpuid_result cpuid(uint32_t eaxIn, uint32_t ecxIn);
 
-#ifdef __cplusplus
-}
-#endif
 
 #endif /* CPUID_H */
 

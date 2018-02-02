@@ -25,8 +25,8 @@
         <itemPath>modules/PDInfo.cpp</itemPath>
         <itemPath>modules/TsxCheck.cpp</itemPath>
       </logicalFolder>
-      <itemPath>cpuid_c.c</itemPath>
-      <itemPath>main.c</itemPath>
+      <itemPath>cpuid_c.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -54,11 +54,11 @@
           <commandLine>-Waddress-of-temporary</commandLine>
         </ccTool>
       </compileType>
-      <item path="cpuid_c.c" ex="false" tool="1" flavor2="0">
+      <item path="cpuid_c.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="cpuid_c.h" ex="false" tool="3" flavor2="0">
+      <item path="cpuid_c.h" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="main.c" ex="false" tool="1" flavor2="0">
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="modules/ArchInfo.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -97,11 +97,11 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="cpuid_c.c" ex="false" tool="0" flavor2="0">
+      <item path="cpuid_c.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="cpuid_c.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="main.c" ex="false" tool="0" flavor2="0">
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="modules/ArchInfo.cpp" ex="false" tool="1" flavor2="0">
       </item>

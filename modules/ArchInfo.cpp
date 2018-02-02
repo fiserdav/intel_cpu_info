@@ -26,8 +26,8 @@ void ArchInfo::printInformation(){
     // Intel manual page reference .. Table 3-8. Information Returned by CPUID Instruction; Vol. 2A 3-195
     if(this->cpu_result.valid) {
         cout << "Printing architectural CPU Information:" << endl << endl; 
-
-        uint32_t arch_version = this->cpu_result.eax & 0xff; 
+        
+        uint32_t arch_version = (this->cpu_result.eax & 0xff); 
         uint32_t counter_per_logical_processor = (this->cpu_result.eax & 0xff00) >> 8;
         uint32_t bit_width = (this->cpu_result.eax & 0xff0000) >> 16;
         uint32_t bit_vector = (this->cpu_result.eax & 0xff000000) >> 24;
