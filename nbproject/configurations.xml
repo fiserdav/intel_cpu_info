@@ -50,8 +50,8 @@
       </toolsSet>
       <compileType>
         <ccTool>
-          <commandlineTool>clang++</commandlineTool>
-          <commandLine>-Waddress-of-temporary</commandLine>
+          <standard>8</standard>
+          <commandlineTool>g++</commandlineTool>
         </ccTool>
       </compileType>
       <item path="cpuid_c.cpp" ex="false" tool="1" flavor2="0">
